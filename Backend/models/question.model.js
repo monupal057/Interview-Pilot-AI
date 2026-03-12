@@ -1,0 +1,23 @@
+import mongoose from "mongoose";
+
+const sessionSchema = new mongoose.Schema({
+    session:{
+        type:mongoose.Schema>Types.ObjectId,
+        ref:"Session"
+    },
+    question:{
+        type:String
+    },
+    answer:{
+        type:String
+    },
+    note:{
+        type:String
+    },
+    ispinned:
+    {type:Boolean,
+        drfault:false
+    }
+    },{timestams:true})
+
+    export const Question = mongoose.model("Question",questionSchema)
