@@ -74,7 +74,7 @@ export const getSessionById = async(req, res)=> {
 
         await Question.deleteMany({session:session._id})
 
-        await Session.deleteOne()
+        await session.deleteOne()
 
         return res.status(201).json({
             message:"Session deleted successfully"

@@ -1,8 +1,8 @@
 import mongoose from "mongoose";
 
-const sessionSchema = new mongoose.Schema({
+const questionSchema = new mongoose.Schema({
     session:{
-        type:mongoose.Schema>Types.ObjectId,
+        type:mongoose.Schema.Types.ObjectId,
         ref:"Session"
     },
     question:{
@@ -16,7 +16,7 @@ const sessionSchema = new mongoose.Schema({
     },
     ispinned:
     {type:Boolean,
-        drfault:false
+        default:false
     }
     },{timestams:true})
 
