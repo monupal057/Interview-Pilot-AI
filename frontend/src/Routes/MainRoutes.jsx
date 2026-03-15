@@ -1,7 +1,7 @@
 
 import MainPage from '@/Pages/MainPage'
 import Login from '@/Pages/Login'
-import Register from '@/Pages/Register.'
+import Register from '@/Pages/Register'
 import Session from '@/Pages/Session'
 import SessionDetails from '@/Pages/SessionDetails'
  import { Route, Routes } from 'react-router-dom'
